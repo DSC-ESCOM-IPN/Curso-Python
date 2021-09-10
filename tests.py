@@ -28,14 +28,17 @@ def test_decimal_to_binary():
 
 
 def test_two_sum():
-    assert test_functions.two_sum([1,2,3,4], 6) == [1, 3]
-    assert test_functions.two_sum([4,2,1,5,4], 6) == [2, 3]
-    assert test_functions.two_sum([6,7,1,20,3,4,8], 28) == [3, 6]
+    res = test_functions.two_sum([1,2,3,4], 6)
+    assert 1 in res and  3 in res
+    res = test_functions.two_sum([4,2,1,5,4], 7)
+    assert 1 in res and 3 in res
+    res = test_functions.two_sum([6,7,1,20,3,4,8], 28)
+    assert 3 in res and 3 in res
 
 
 def test_max_and_min_value_in_dict():
-    assert test_functions.max_and_min_value_in_dict({"key1": 3, "key2": -1, "key1": 20, "key1": 4}) == (-1, 20)
-    assert test_functions.max_and_min_value_in_dict({"key1": -10, "key2": 4, "key1": 15, "key1": -8}) == (-10, 15)
+    assert test_functions.max_and_min_value_in_dict({"key1": 3, "key2": -1, "key3": 20, "key4": 4}) == (-1, 20)
+    assert test_functions.max_and_min_value_in_dict({"key1": -10, "key2": 4, "key3": 15, "key4": -8}) == (-10, 15)
 
 
 def test_sort_numbers():
