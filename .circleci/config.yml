@@ -27,5 +27,3 @@ jobs:
       - run:
           name: Run tests
           command: ls -la
-          command: pytest tests.py
-      
