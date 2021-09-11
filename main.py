@@ -1,40 +1,16 @@
-from typing import Dict, List, Tuple
+class Animal:
+
+    def __init__(self, color, tipo="perro") -> None:
+        self.color = color
+        self.tipo = tipo
+
+    def format_animal(self):
+        print("El animal es de color"+ str(self.color)+ ", y tipo" +str(self.tipo))
+        print("El animal es de color{1} , y tipo{0}".format(self.tipo, self.color))
+        return f"El animal es de color{self.color}, y tipo {self.tipo}"
 
 
-# Escribe una funcion que regrese el valor de fibonacci en la posicion nth
-def fibonacci(n: int) -> int:
-    # aqui escribe tu funcion
-    pass
+animal1 = Animal(color="cafe")
 
+print(animal1.format_animal())
 
-# Escribe una funcion que verifique si una cadena es anagrama de otra
-def is_anagram(str1: str, str2: str) -> bool:
-    # aqui escribe tu funcion
-    pass
-
-
-# Escribe una funcion que regrese los numeros impares entre 0-100
-def first_100_odd_numbers() -> List[int]:
-    pass
-
-
-# Escribe una funcion que convierta un numero decimal a binario
-def decimal_to_binary(n: int) -> str:
-    pass
-
-
-# Escribe una funcion que recibe una lista de enteros y un valor n, que regrese
-# el indice de los dos numeros que suman dicho valor n
-def two_sum(numbers: List[int], target: int) -> List[int]:
-    pass
-
-
-# Escribe una funcion que regrese el numero mayor y menor de un diccionario
-# {"key1": 3, "key2": -1, "key1": 20, "key1": 4} min=-1 max=20
-# (min, max)
-def max_and_min_value_in_dict(values: Dict) -> Tuple[int, int]:
-    pass
-
-# Escribe una funcion que ordene numeros
-def sort_numbers(nums: List[int]) -> List[int]:
-    pass
