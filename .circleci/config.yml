@@ -24,5 +24,5 @@ jobs:
           pip-dependency-file: requirements.txt
       - run:
           name: Run tests
-          command: pytest tests.py
+          command: pytest tests/tests.py
       
