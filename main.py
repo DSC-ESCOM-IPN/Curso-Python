@@ -1,40 +1,39 @@
-from typing import Dict, List, Tuple
+from typing import BinaryIO
+import json
 
 
-# Escribe una funcion que regrese el valor de fibonacci en la posicion nth
-def fibonacci(n: int) -> int:
-    # aqui escribe tu funcion
-    pass
+def read_operations(file: BinaryIO):
+    print(file.read())
+    print(file.readable())
+    print(file.readline())
+    print(file.readlines())
 
 
-# Escribe una funcion que verifique si una cadena es anagrama de otra
-def is_anagram(str1: str, str2: str) -> bool:
-    # aqui escribe tu funcion
-    pass
+def write_operations(file: BinaryIO):
+    print(file.write("hola"))
+    print(file.write("adios"))
+    print(file.writable())
+    print(file.writelines([]))
 
 
-# Escribe una funcion que regrese los numeros impares entre 0-100
-def first_100_odd_numbers() -> List[int]:
-    pass
+def read_json(file):
+    data = json.load(file)
+    return data
 
 
-# Escribe una funcion que convierta un numero decimal a binario
-def decimal_to_binary(n: int) -> str:
-    pass
+def write_json(diccionario):
+    json_object = json.dumps(diccionario)
+    print(type(json_object))
+    f = open("sample.json", "w")
+    f.write(json_object)
+    f.close()
 
 
-# Escribe una funcion que recibe una lista de enteros y un valor n, que regrese
-# el indice de los dos numeros que suman dicho valor n
-def two_sum(numbers: List[int], target: int) -> List[int]:
-    pass
-
-
-# Escribe una funcion que regrese el numero mayor y menor de un diccionario
-# {"key1": 3, "key2": -1, "key1": 20, "key1": 4} min=-1 max=20
-# (min, max)
-def max_and_min_value_in_dict(values: Dict) -> Tuple[int, int]:
-    pass
-
-# Escribe una funcion que ordene numeros
-def sort_numbers(nums: List[int]) -> List[int]:
-    pass
+if __name__ == "__main__":
+    alumnos = {
+        "alumnos": [
+            {"nombre": "Jose", "escuela": "escom"},
+            {"nombre": "Jose", "escuela": "escom"}
+        ]
+    }
+    write_json(alumnos)
