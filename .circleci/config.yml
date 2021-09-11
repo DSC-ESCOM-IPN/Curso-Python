@@ -8,7 +8,7 @@ jobs:
       - python/install-packages:
           pkg-manager: pip
       - python/install-packages:
-          pip-dependency-file: requirements.txt
+          pip-dependency-file: requeriments.txt
           pkg-manager: pip
       - python/install-packages:
           args: pytest
