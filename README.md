@@ -1,4 +1,6 @@
-# [Virtualenv](https://virtualenv.pypa.io/en/latest/)
+# Clase 3
+
+## [Virtualenv](https://virtualenv.pypa.io/en/latest/)
 
 Instalar
 
@@ -30,7 +32,7 @@ Desactivar entorno virtual
 deactivate
 ```
 
-# [PIP](https://pip.pypa.io/en/stable/)
+## [PIP](https://pip.pypa.io/en/stable/)
 
 Instalar paquete
 
@@ -50,7 +52,7 @@ Listar dependencias
 pip freeze
 ```
 
-# [Poetry](https://python-poetry.org/docs/)
+## [Poetry](https://python-poetry.org/docs/)
 
 Instalar 
 
@@ -76,6 +78,6 @@ Eliminar dependencia
 poetry remove package
 ```
 
-# [venv](https://docs.python.org/3/library/venv.html)
+## [venv](https://docs.python.org/3/library/venv.html)
 
-# [Pyenv](https://github.com/pyenv/pyenv)
+## [Pyenv](https://github.com/pyenv/pyenv)
