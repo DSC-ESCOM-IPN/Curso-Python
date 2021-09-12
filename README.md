@@ -1,5 +1,7 @@
 # Clase 3
 
+# [Video Clase](https://www.youtube.com/watch?v=MvkafN95o98)
+
 ## [Virtualenv](https://virtualenv.pypa.io/en/latest/)
 
 Instalar
