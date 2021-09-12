@@ -1,0 +1,49 @@
+{
+    "alumnos": [
+        {
+            "nombre": "Jose Rivera",
+            "edad": 22,
+            "calificaciones": [
+                {
+                    "promedio": "8.02"
+                }
+            ]
+        },
+        {
+            "nombre": "Osmar Perez",
+            "edad": 23,
+            "calificaciones": [
+                {
+                    "promedio": "3.04"
+                }
+            ]
+        },
+        {
+            "nombre": "Oscar Martinez",
+            "edad": 24,
+            "calificaciones": [
+                {
+                    "promedio": "1.08"
+                }
+            ]
+        },
+        {
+            "nombre": "Karla Castillo",
+            "edad": 22,
+            "calificaciones": [
+                {
+                    "promedio": "7.02"
+                }
+            ]
+        },
+        {
+            "nombre": "Jaime Lopez",
+            "edad": 20,
+            "calificaciones": [
+                {
+                    "promedio": "9.6"
+                }
+            ]
+        }
+    ]
+}
