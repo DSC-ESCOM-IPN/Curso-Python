@@ -4,7 +4,7 @@ from typing import Dict, List, Tuple
 # Escribe una funcion que regrese el valor de fibonacci en la posicion nth
 def fibonacci(n: int) -> int:
     # aqui escribe tu funcion
-    pass
+    return 1
 
 
 # Escribe una funcion que verifique si una cadena es anagrama de otra
