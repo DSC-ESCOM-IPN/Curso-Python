@@ -1,0 +1,28 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@1.2
+
+workflows:
+  test:  # This is the name of the workflow, feel free to change it to better match your workflow.
+    jobs:
+      - test:
+        filters:
+            branches:
+              only:
+                - Ejercicios-1
+
+
+jobs:
+  test:  
+    docker:
+      - image: cimg/python:3.9
+    steps:
+      - checkout
+      - python/install-packages:
+          pkg-manager: pip
+          pip-dependency-file: requirements.txt
+      - run:
+          name: Run tests
+          command: pytest tests/tests.py
+      
