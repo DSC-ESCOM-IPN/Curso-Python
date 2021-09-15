@@ -15,7 +15,11 @@ def is_anagram(str1: str, str2: str) -> bool:
 
 # Escribe una funcion que regrese los numeros impares entre 0-100
 def first_100_odd_numbers() -> List[int]:
-    pass
+    result = []
+    for i in range(0, 100):
+        if i % 2 != 0:
+            result.append(i)
+    return result
 
 
 # Escribe una funcion que convierta un numero decimal a binario
