@@ -1,0 +1,5 @@
+docker-compose exec web alembic init -t async migrations
+
+docker-compose exec web alembic revision --autogenerate -m "init"
+
+docker-compose exec web alembic upgrade head
